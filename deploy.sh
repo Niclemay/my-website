@@ -5,7 +5,7 @@
 cd ~/Desktop/my-website || exit
 
 # Copy your HTML file from Desktop into the repo
-cp ~/Desktop/market_report.html .
+# cp ~/Desktop/market_report.html .
 
 # Stage all changes
 git add .
