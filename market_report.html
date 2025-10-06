@@ -7,23 +7,25 @@ body { font-family: Arial, sans-serif; margin: 20px; }
 h1 { color: #333; }
 table { border-collapse: collapse; margin-bottom: 20px; width: 95%; }
 th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
+a.help-link { font-size: 14px; margin-left: 20px; }
 </style>
 </head>
 <body>
 <h1>Market Indicators Report</h1>
-<p>Generated on: 2025-10-04 22:00:11</p>
+<p>Generated on: 2025-10-05 20:54:23</p>
+<p><a href="help.html" class="help-link" target="_blank">📘 View Indicators Help</a></p>
 <h2>STOCKS (last 5 days with indicators & signals)</h2><h3>XEQT.TO (ISHARES CORE EQUITY ETF)</h3><table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -38,17 +40,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>38.83</td>
-      <td>0.36</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>38.95</td>
@@ -93,6 +84,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>PSLV.TO (SPROTT PHYSICAL SILVER TRUST CA)</h3><table border="1" class="dataframe">
   <thead>
@@ -100,12 +102,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -120,17 +122,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>21.93</td>
-      <td>1.39</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td>VolumeSignal</td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>21.84</td>
@@ -175,6 +166,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>VFV.TO (VANGUARD SP 500 INDEX ETF)</h3><table border="1" class="dataframe">
   <thead>
@@ -182,12 +184,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -202,17 +204,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>164.34</td>
-      <td>0.09</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>164.99</td>
@@ -257,6 +248,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>XGD.TO (iSHARES S&P/TSX GLOBAL GOLD IND)</h3><table border="1" class="dataframe">
   <thead>
@@ -264,12 +266,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -284,17 +286,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>45.66</td>
-      <td>0.57</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>45.94</td>
@@ -339,6 +330,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>CP.TO (CANADIAN PACIFIC KANSAS CITY LI)</h3><table border="1" class="dataframe">
   <thead>
@@ -346,12 +348,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -366,17 +368,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>102.28</td>
-      <td>-0.19</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>103.65</td>
@@ -421,6 +412,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>AC.TO (AIR CANADA)</h3><table border="1" class="dataframe">
   <thead>
@@ -428,12 +430,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -448,17 +450,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>17.90</td>
-      <td>0.67</td>
-      <td>Oversold</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>BB_BuySignal</td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>17.56</td>
@@ -503,6 +494,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>JNJ.NE (JOHNSON & JOHNSON CDR (CAD HEDG)</h3><table border="1" class="dataframe">
   <thead>
@@ -510,12 +512,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -530,17 +532,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>23.71</td>
-      <td>1.07</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>24.20</td>
@@ -585,6 +576,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>CAE.TO (CAE INC)</h3><table border="1" class="dataframe">
   <thead>
@@ -592,12 +594,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -612,17 +614,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>40.99</td>
-      <td>3.25</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>41.21</td>
@@ -667,6 +658,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>BBD-B.TO (BOMBARDIER INC., CL. B, SV)</h3><table border="1" class="dataframe">
   <thead>
@@ -674,12 +676,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -694,17 +696,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>194.71</td>
-      <td>1.72</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>195.03</td>
@@ -749,6 +740,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>CVO.TO (COVEO SOLUTIONS INC)</h3><table border="1" class="dataframe">
   <thead>
@@ -756,12 +758,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -776,17 +778,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>8.76</td>
-      <td>-2.12</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>8.62</td>
@@ -831,6 +822,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td>BB_BuySignal</td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oversold</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>DOL.TO (DOLLARAMA INC)</h3><table border="1" class="dataframe">
   <thead>
@@ -838,12 +840,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -858,17 +860,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>183.76</td>
-      <td>-0.46</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>183.54</td>
@@ -913,6 +904,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>COST.NE (COSTCO CDR (CAD HEDGED))</h3><table border="1" class="dataframe">
   <thead>
@@ -920,12 +922,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -940,17 +942,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>41.61</td>
-      <td>-0.05</td>
-      <td>Oversold</td>
-      <td></td>
-      <td></td>
-      <td>VolumeSignal</td>
-      <td>BB_BuySignal</td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>41.98</td>
@@ -995,6 +986,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Oversold</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>SHOP.TO (SHOPIFY INC)</h3><table border="1" class="dataframe">
   <thead>
@@ -1002,12 +1004,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1022,17 +1024,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>207.46</td>
-      <td>6.17</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>206.76</td>
@@ -1077,6 +1068,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>ATD.TO (ALIMENTATION COUCHE-TARD INC)</h3><table border="1" class="dataframe">
   <thead>
@@ -1084,12 +1086,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1104,17 +1106,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>73.75</td>
-      <td>1.53</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>74.25</td>
@@ -1159,6 +1150,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>CAS.TO (CASCADES INC)</h3><table border="1" class="dataframe">
   <thead>
@@ -1166,12 +1168,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1186,17 +1188,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>9.56</td>
-      <td>0.00</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>9.64</td>
@@ -1241,6 +1232,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>EMP-A.TO (EMPIRE COMPANY LIMITED)</h3><table border="1" class="dataframe">
   <thead>
@@ -1248,12 +1250,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1268,17 +1270,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>49.74</td>
-      <td>1.28</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>49.95</td>
@@ -1323,6 +1314,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>L.TO (LOBLAW CO)</h3><table border="1" class="dataframe">
   <thead>
@@ -1330,12 +1332,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1350,17 +1352,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>53.89</td>
-      <td>0.80</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>53.83</td>
@@ -1405,6 +1396,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>CNR.TO (CANADIAN NATIONAL RAILWAY CO.)</h3><table border="1" class="dataframe">
   <thead>
@@ -1412,12 +1414,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1432,17 +1434,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>130.74</td>
-      <td>1.05</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>131.24</td>
@@ -1487,6 +1478,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>WPM.TO (WHEATON PRECIOUS METALS CORP)</h3><table border="1" class="dataframe">
   <thead>
@@ -1494,12 +1496,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1514,17 +1516,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>153.85</td>
-      <td>1.21</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>155.74</td>
@@ -1569,6 +1560,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>AQN.TO (ALGONQUIN POWER AND UTILITIES C)</h3><table border="1" class="dataframe">
   <thead>
@@ -1576,12 +1578,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1596,17 +1598,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>7.45</td>
-      <td>0.54</td>
-      <td>Oversold</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>7.48</td>
@@ -1651,6 +1642,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>CCO.TO (CAMECO CORP)</h3><table border="1" class="dataframe">
   <thead>
@@ -1658,12 +1660,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1678,17 +1680,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>117.59</td>
-      <td>-1.37</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>116.80</td>
@@ -1733,6 +1724,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>HURA.TO (GLOBAL X URANIUM INDEX ETF)</h3><table border="1" class="dataframe">
   <thead>
@@ -1740,12 +1742,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1760,17 +1762,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>57.30</td>
-      <td>0.35</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>56.87</td>
@@ -1815,6 +1806,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h2>INDICES (last 5 days with indicators & signals)</h2><h3>^GSPTSE (S&P/TSX Composite index)</h3><table border="1" class="dataframe">
   <thead>
@@ -1822,12 +1824,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1842,17 +1844,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>29971.9</td>
-      <td>0.71</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>30022.8</td>
@@ -1897,6 +1888,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>^GSPC (S&P 500)</h3><table border="1" class="dataframe">
   <thead>
@@ -1904,12 +1906,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -1924,17 +1926,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>6661.21</td>
-      <td>0.26</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>6688.46</td>
@@ -1979,6 +1970,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <td></td>
       <td></td>
     </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
   </tbody>
 </table><h3>GC=F (Gold Dec 25)</h3><table border="1" class="dataframe">
   <thead>
@@ -1986,12 +1988,12 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>Price</th>
       <th>Close</th>
       <th>Price_Change_%</th>
-      <th>RSI_Oversold</th>
-      <th>MACD_BuySignal</th>
-      <th>MA_BuySignal</th>
-      <th>Volume_Signal</th>
-      <th>BB_BuySignal</th>
-      <th>ADX_BuySignal</th>
+      <th>RSI<br>(Momentum)</th>
+      <th>MACD<br>(Trend & Momentum)</th>
+      <th>Moving Average<br>(Trend)</th>
+      <th>Volume<br>(Confirmation)</th>
+      <th>Bollinger Bands<br>(Volatility)</th>
+      <th>ADX<br>(Strength)</th>
     </tr>
     <tr>
       <th>Date</th>
@@ -2006,17 +2008,6 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th>2025-09-29</th>
-      <td>3820.9</td>
-      <td>1.21</td>
-      <td></td>
-      <td>MACD_BuySignal</td>
-      <td></td>
-      <td>VolumeSignal</td>
-      <td></td>
-      <td></td>
-    </tr>
     <tr>
       <th>2025-09-30</th>
       <td>3840.8</td>
@@ -2054,6 +2045,17 @@ th, td { border: 1px solid #ccc; padding: 5px; text-align: center; }
       <th>2025-10-03</th>
       <td>3880.8</td>
       <td>1.07</td>
+      <td></td>
+      <td>MACD_BuySignal</td>
+      <td></td>
+      <td>VolumeSignal</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>2025-10-05</th>
+      <td>3931.3</td>
+      <td>1.30</td>
       <td></td>
       <td>MACD_BuySignal</td>
       <td></td>
