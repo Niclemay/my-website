@@ -1,49 +1,88 @@
 
 <html>
 <head>
-<title>Indicators Help</title>
+<title>Indicators Help - Detailed</title>
 <style>
 body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
 h1 { color: #333; }
 h2 { margin-top: 25px; color: #444; }
+h3 { margin-top: 20px; color: #555; }
 p { margin-bottom: 10px; }
 ul { margin-top: 5px; }
+code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 </style>
 </head>
 <body>
-<h1>Technical Indicators Help</h1>
-<p>This page explains the indicators used in the Market Indicators Report.</p>
-<p><i>Generated on: 2025-10-05 20:52:17</i></p>
+<h1>Technical & Fundamental Indicators Help (Detailed)</h1>
+<p>This page explains the indicators used in the Market Indicators + Fundamentals Report, including the logic behind each one and how it contributes to the Swing Score.</p>
+<p><i>Generated on: 2025-10-06 21:51:13</i></p>
 
 <h2>RSI (Relative Strength Index)</h2>
-<p><b>Definition:</b> RSI measures the speed and change of price movements. It oscillates between 0 and 100.</p>
-<p><b>Calculation:</b> Based on the average gains vs losses over the last 14 periods.</p>
-<p><b>Buy Signal:</b> RSI is below 30–35 (oversold condition).</p>
+<p><b>Definition:</b> RSI measures the speed and magnitude of recent price changes to evaluate overbought or oversold conditions. Values oscillate between 0 and 100.</p>
+<p><b>Calculation:</b> RSI = 100 - (100 / (1 + RS)), where RS = average gains / average losses over 14 periods.</p>
+<p><b>Logic in swing trading:</b> If RSI is low (<35), it indicates the asset may be oversold and a short-term rebound is likely, providing a potential entry point.</p>
 
 <h2>MACD (Moving Average Convergence Divergence)</h2>
-<p><b>Definition:</b> MACD shows the relationship between two moving averages (usually 12-day EMA and 26-day EMA).</p>
-<p><b>Calculation:</b> MACD = (12-day EMA − 26-day EMA). A 9-day EMA of MACD is the Signal line. The histogram shows the difference between them.</p>
-<p><b>Buy Signal:</b> MACD line crosses above the Signal line.</p>
+<p><b>Definition:</b> MACD shows the relationship between two EMAs (12-day and 26-day). It highlights changes in momentum.</p>
+<p><b>Buy Signal Logic:</b> When the MACD line crosses above the Signal line (9-day EMA of MACD), it indicates a bullish momentum shift.</p>
 
 <h2>Moving Averages (MA20 & MA50)</h2>
-<p><b>Definition:</b> A moving average smooths price data to identify trends over time.</p>
-<p><b>Calculation:</b> Average of the last N closing prices (20-day and 50-day in this script).</p>
-<p><b>Buy Signal:</b> Short-term MA (MA20) crosses above long-term MA (MA50).</p>
+<p><b>Definition:</b> Simple moving averages smooth price data to identify the trend over time.</p>
+<p><b>Buy Signal Logic:</b> When short-term MA20 crosses above long-term MA50 (Golden Cross), it indicates an emerging uptrend.</p>
 
 <h2>Volume</h2>
-<p><b>Definition:</b> Volume measures how many shares/contracts were traded during a period.</p>
-<p><b>Calculation:</b> Compare current volume to the 20-day average volume.</p>
-<p><b>Buy Signal:</b> Current volume is more than 1.5x the 20-day average (indicating strong confirmation of a move).</p>
+<p><b>Definition:</b> Volume shows how many shares/contracts are traded in a period.</p>
+<p><b>Logic:</b> Volume spikes (>1.5×20-day average) confirm the validity of a price move or trend breakout.</p>
 
 <h2>Bollinger Bands</h2>
-<p><b>Definition:</b> Bollinger Bands measure volatility and consist of a middle band (20-day SMA) and two bands above/below (±2 standard deviations).</p>
-<p><b>Calculation:</b> Upper Band = SMA + (2 × Std Dev), Lower Band = SMA − (2 × Std Dev).</p>
-<p><b>Buy Signal:</b> Price closes below the Lower Band (potential oversold condition).</p>
+<p><b>Definition:</b> Bollinger Bands consist of a 20-day SMA (middle band) and two standard deviation bands (upper and lower) that measure volatility.</p>
+<p><b>Buy Signal Logic:</b> When price closes below the lower band, it may indicate an oversold condition and a potential rebound.</p>
 
 <h2>ADX (Average Directional Index)</h2>
-<p><b>Definition:</b> ADX measures the strength of a trend (not its direction).</p>
-<p><b>Calculation:</b> Based on the difference between +DI and −DI lines, smoothed over time.</p>
-<p><b>Buy Signal:</b> +DI crosses above −DI AND ADX > 20 (indicating a strong trend).</p>
+<p><b>Definition:</b> ADX measures trend strength (not direction) based on the difference between +DI and −DI lines.</p>
+<p><b>Buy Signal Logic:</b> +DI crossing above −DI with ADX > 20 signals a strong bullish trend suitable for swing trades.</p>
+
+<h2>ATR (Average True Range & Volatility)</h2>
+<p><b>Definition:</b> ATR measures volatility using the average of true ranges (current high − low, or relative to previous close).</p>
+<p><b>Logic:</b> Swing traders use ATR as a measure of price movement risk. Low ATR% suggests stable conditions suitable for entering positions.</p>
+
+<h2>Relative Strength vs S&P500</h2>
+<p><b>Definition:</b> Measures how a stock is performing relative to the S&P500 index over the past 10 days.</p>
+<p><b>Calculation:</b> 
+<code>Rel_Strength = (Stock_Close / S&P500_Close).pct_change().rolling(10).mean()</code></p>
+<p><b>Logic:</b> 
+<ul>
+<li>Positive values → Stock is outperforming the market, indicating relative strength.</li>
+<li>Negative values → Underperforming the market, weaker momentum.</li>
+<li>This helps select stocks that are leading the market in a swing trading setup.</li>
+</ul>
+</p>
+
+<h2>Fundamentals</h2>
+<ul>
+<li><b>PE Ratio:</b> Price/Earnings ratio. Lower values may indicate undervaluation.</li>
+<li><b>Revenue Growth:</b> Year-over-year revenue growth. Positive growth supports bullish setups.</li>
+<li><b>Beta:</b> Measures stock volatility relative to the market. Beta < 1.5 is generally preferred for swing trading.</li>
+<li><b>52-week High / Low:</b> Current price relative to yearly range. Helps identify overbought/oversold conditions.</li>
+</ul>
+
+<h2>Swing Score (0–10)</h2>
+<p><b>Definition:</b> Composite score combining momentum, trend, volatility, and fundamental metrics to assess attractiveness for swing trading.</p>
+<p><b>Components & Logic:</b>
+<ul>
+<li>RSI oversold → +1 if RSI < 40</li>
+<li>MACD bullish crossover → +1 if MACD > Signal line</li>
+<li>MA20 above MA50 → +1</li>
+<li>ADX > 20 → +1 (strong trend)</li>
+<li>Price < Lower Bollinger Band → +1</li>
+<li>Reasonable valuation (PE < 20) → +1</li>
+<li>Revenue growth > 5% → +1</li>
+<li>Beta < 1.5 → +1 (manageable volatility)</li>
+<li>Price < 52-week high by >10% → +1</li>
+<li>Volatility % < 5% → +1</li>
+</ul>
+<p>Higher scores (7–10) indicate strong swing-trading opportunities (green), moderate scores (4–6) are neutral (yellow), and low scores (0–3) indicate weak setups (gray).</p>
+</p>
 
 </body>
 </html>
