@@ -20,76 +20,65 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <li>Calculation / Method</li>
 <li>Interpretation for swing trading</li>
 </ul>
-<p><i>Generated on: 2025-10-07 21:31:54</i></p>
+<p><i>Generated on: 2025-10-08 13:52:07</i></p>
 
 <h2>RSI (Relative Strength Index)</h2>
-<p><b>Definition:</b> RSI measures the speed and magnitude of price movements to identify overbought or oversold conditions. It ranges from 0 to 100.</p>
-<p><b>Calculation:</b> RSI = 100 - (100 / (1 + RS)), where RS = average gains / average losses over 14 periods (days).</p>
-<p><b>Logic in swing trading:</b> 
+<p><b>Definition:</b> Measures speed and magnitude of price movements to identify overbought/oversold conditions (0–100).</p>
+<p><b>Calculation:</b> RSI = 100 - (100 / (1 + RS)), where RS = average gains / average losses over 14 periods.</p>
+<p><b>Swing trading logic:</b>
 <ul>
-<li>RSI &lt; 35 → oversold → potential buy (short-term rebound likely)</li>
-<li>RSI &gt; 65 → overbought → caution or potential sell</li>
+<li>RSI &lt; 35 → oversold → potential buy</li>
+<li>RSI &gt; 65 → overbought → potential sell</li>
 </ul>
 </p>
 
 <h2>MACD (Moving Average Convergence Divergence)</h2>
-<p><b>Definition:</b> MACD shows momentum by comparing short-term EMA (12-day) to long-term EMA (26-day).</p>
-<p><b>Buy Signal Logic:</b> MACD line crossing above Signal line (9-day EMA of MACD) → bullish momentum.</p>
-<p><b>Interpretation:</b> Useful for spotting trend reversals and momentum shifts in swing trading.</p>
+<p><b>Definition:</b> Momentum indicator comparing short-term EMA (12-day) to long-term EMA (26-day).</p>
+<p><b>Buy Signal:</b> MACD line crosses above Signal line → bullish momentum.</p>
+<p><b>Sell Signal:</b> MACD line crosses below Signal line → bearish momentum.</p>
 
 <h2>Moving Averages (MA20 & MA50)</h2>
-<p><b>Definition:</b> Simple moving averages smooth price data to identify trends over time.</p>
-<p><b>Buy Signal Logic:</b> 
-<ul>
-<li>MA20 crosses above MA50 (Golden Cross) → potential uptrend → buy signal</li>
-<li>MA20 crosses below MA50 (Death Cross) → potential downtrend → sell signal</li>
-</ul>
-</p>
+<p><b>Definition:</b> Simple moving averages smooth price data to identify trends.</p>
+<p><b>Buy Signal:</b> MA20 crosses above MA50 (Golden Cross) → potential uptrend.</p>
+<p><b>Sell Signal:</b> MA20 crosses below MA50 (Death Cross) → potential downtrend.</p>
 
 <h2>Volume</h2>
-<p><b>Definition:</b> Volume shows the number of shares/contracts traded daily.</p>
-<p><b>Logic:</b> Volume spikes (&gt; 1.5 × 20-day average) confirm price moves or trend breakouts, supporting trading decisions.</p>
+<p><b>Definition:</b> Number of shares/contracts traded daily.</p>
+<p><b>Logic:</b> Volume spikes (&gt; 1.5 × 20-day average) confirm trends. Can signal continuation or reversal.</p>
 
 <h2>Bollinger Bands</h2>
-<p><b>Definition:</b> Bollinger Bands consist of a 20-day SMA (middle band) and two standard deviation bands (upper & lower) to measure volatility.</p>
-<p><b>Buy Signal Logic:</b> Closing below the lower band may indicate oversold conditions → potential entry point. Conversely, closing above the upper band may indicate overbought conditions.</p>
+<p><b>Definition:</b> 20-day SMA (middle) ± 2 standard deviations (upper & lower bands).</p>
+<p><b>Buy Signal:</b> Close &lt; lower band → oversold → potential rebound.</p>
+<p><b>Sell Signal:</b> Close &gt; upper band → overbought → potential pullback.</p>
 
 <h2>ADX (Average Directional Index)</h2>
-<p><b>Definition:</b> ADX measures trend strength (0–100) without indicating direction. Calculated using +DI and −DI lines.</p>
-<p><b>Buy Signal Logic:</b> +DI crossing above −DI with ADX &gt; 20 → strong bullish trend → favorable for swing trading.</p>
+<p><b>Definition:</b> Measures trend strength (0–100) without direction. Uses +DI and −DI lines.</p>
+<p><b>Buy Signal:</b> +DI crosses above −DI with ADX &gt; 20 → strong bullish trend.</p>
+<p><b>Sell Signal:</b> −DI crosses above +DI with ADX &gt; 20 → strong bearish trend.</p>
 
 <h2>ATR (Average True Range & Volatility)</h2>
-<p><b>Definition:</b> ATR measures volatility by averaging True Ranges:</p>
-<ul>
-<li>TR = max(High−Low, |High−PreviousClose|, |Low−PreviousClose|)</li>
-<li>ATR = 14-day moving average of TR</li>
-</ul>
-<p><b>Logic:</b> ATR itself does not indicate direction. It helps traders evaluate risk and position sizing:</p>
-<ul>
-<li>Low ATR% → stable conditions → potentially safer entry</li>
-<li>High ATR% → highly volatile → higher risk</li>
-</ul>
+<p><b>Definition:</b> Measures volatility via True Range: TR = max(High−Low, |High−PrevClose|, |Low−PrevClose|).</p>
+<p><b>Logic:</b> ATR% indicates price movement volatility. Not directional but helps assess risk.</p>
 
 <h2>Relative Strength vs S&P500</h2>
-<p><b>Definition:</b> Measures performance relative to S&P500 over a 10-day rolling window.</p>
-<p><b>Calculation:</b> <code>Rel_Strength = (Stock_Close / S&P500_Close).pct_change().rolling(10).mean()</code></p>
-<p><b>Logic:</b> Positive → stock is outperforming market, stronger momentum. Negative → underperforming, weaker momentum.</p>
+<p><b>Definition:</b> Performance relative to S&P500 over 10-day rolling window.</p>
+<p><b>Logic:</b> Positive → outperforming market; Negative → underperforming.</p>
 
 <h2>Fundamentals</h2>
 <ul>
-<li><b>PE Ratio:</b> Price/Earnings. Lower may indicate undervaluation.</li>
-<li><b>Revenue Growth:</b> YoY growth. Positive supports bullish setups.</li>
-<li><b>Beta:</b> Volatility relative to market. Beta &lt; 1.5 → manageable risk.</li>
-<li><b>52-week High / Low:</b> Price relative to yearly range. Helps spot overbought/oversold zones.</li>
+<li><b>PE Ratio:</b> Price/Earnings. Low → potential value buy; high → caution/sell.</li>
+<li><b>Revenue Growth:</b> Positive → supports bullish setup; negative → caution.</li>
+<li><b>Beta:</b> Volatility vs market. Beta &lt; 1.5 → moderate risk; &gt; 1.5 → higher risk.</li>
+<li><b>52-week High / Low:</b> Price relative to yearly range; helps spot overbought/oversold zones.</li>
 </ul>
 
 <h2>Swing Score (0–10)</h2>
-<p><b>Definition:</b> Combines momentum, trend, volatility, and fundamentals to assess attractiveness for swing trading.</p>
+<p><b>Definition:</b> Combines momentum, trend, volatility, and fundamentals into a single score.</p>
 <p><b>Components & Logic:</b>
 <ul>
-<li>RSI oversold → +1 if RSI &lt; 40</li>
+<li>RSI oversold → +1</li>
 <li>MACD bullish crossover → +1</li>
-<li>MA20 above MA50 → +1</li>
+<li>MA20 &gt; MA50 → +1</li>
 <li>ADX &gt; 20 → +1</li>
 <li>Price &lt; Lower Bollinger Band → +1</li>
 <li>PE &lt; 20 → +1</li>
@@ -100,11 +89,27 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 </ul>
 <p>Score interpretation:</p>
 <ul>
-<li>7–10 → strong setup (green)</li>
+<li>7–10 → strong bullish setup (green)</li>
 <li>4–6 → moderate (yellow)</li>
 <li>0–3 → weak (gray)</li>
 </ul>
 </p>
 
+<h2>Sell / Bearish Signals</h2>
+<p><b>Sell Score (0–10):</b> Higher score → higher probability of bearish movement.</p>
+<p><b>Components & Logic:</b>
+<ul>
+<li>RSI overbought (RSI &gt; 65) → +1</li>
+<li>MACD bearish crossover → +1</li>
+<li>MA20 &lt; MA50 → +1</li>
+<li>ADX &gt; 20 and −DI &gt; +DI → +1</li>
+<li>Price &gt; Upper Bollinger Band → +1</li>
+<li>PE high or negative fundamentals → +1</li>
+<li>Revenue Growth negative → +1</li>
+<li>Beta &gt; 1.5 → +1</li>
+<li>Price &gt; 52-week Low by &lt;10% → +1</li>
+<li>High Volatility % (&gt; 5%) → +1</li>
+</ul>
+<p>Interpretation: Higher sell score → stronger bearish signal, potential market reversal.</p>
 </body>
 </html>
