@@ -12,24 +12,6 @@ DATE="$(date '+%Y-%m-%d %H:%M:%S')"
 echo "=== auto_update start: $DATE ===" >> "$LOG"
 
 # 1) Run the Python script with the specific interpreter in your venv
-/home/nicolas/myenv/bin/python3 /home/nicolas/Desktop/market_report.py >> "$LOG" 2>&1 || {
-  echo "Python script failed at $(date)" >> "$LOG"
-  exit 1
-}
-
-# 1.1) Run the Python script with the specific interpreter in your venv
-/home/nicolas/myenv/bin/python3 /home/nicolas/Desktop/market_report_enhanced_colored.py >> "$LOG" 2>&1 || {
-  echo "Python script failed at $(date)" >> "$LOG"
-  exit 1
-}
-
-# 1.2) Run the Python script with the specific interpreter in your venv
-/home/nicolas/myenv/bin/python3 /home/nicolas/Desktop/market_report_reversal_enhanced_colored.py >> "$LOG" 2>&1 || {
-  echo "Python script failed at $(date)" >> "$LOG"
-  exit 1
-}
-
-# 1.3) Run the Python script with the specific interpreter in your venv
 /home/nicolas/myenv/bin/python3 /home/nicolas/Desktop/market_swing_reversal_dashboard.py >> "$LOG" 2>&1 || {
   echo "Python script failed at $(date)" >> "$LOG"
   exit 1
