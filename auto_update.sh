@@ -12,10 +12,11 @@ DATE="$(date '+%Y-%m-%d %H:%M:%S')"
 echo "=== auto_update start: $DATE ===" >> "$LOG"
 
 # 1) Run the Python script with the specific interpreter in your venv
-/home/nicolas/myenv/bin/python3 /home/nicolas/Desktop/market_swing_reversal_dashboard.py >> "$LOG" 2>&1 || {
+/home/nicolas/myenv/bin/python3 /home/nicolas/Desktop/market_swing_reversal_dashboard.py>> "$LOG" 2>&1 || {
   echo "Python script failed at $(date)" >> "$LOG"
   exit 1
 }
+
 
 # 2) Run deploy script to push changes to GitHub
 /home/nicolas/Desktop/my-website/deploy.sh >> "$LOG" 2>&1 || {
