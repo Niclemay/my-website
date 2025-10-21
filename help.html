@@ -20,7 +20,7 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <li>Calculation / Method</li>
 <li>Interpretation for swing trading</li>
 </ul>
-<p><i>Generated on: 2025-10-08 14:18:23</i></p>
+<p><i>Generated on: 2025-10-21 17:20:12</i></p>
 
 <h2>RSI (Relative Strength Index)</h2>
 <p><b>Definition:</b> Measures speed and magnitude of price movements to identify overbought/oversold conditions (0–100).</p>
@@ -45,6 +45,22 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <h2>Volume</h2>
 <p><b>Definition:</b> Number of shares/contracts traded daily.</p>
 <p><b>Logic:</b> Volume spikes (&gt; 1.5 × 20-day average) confirm trends. Can signal continuation or reversal.</p>
+
+<h2>OBV (On-Balance Volume)</h2>
+<p><b>Definition:</b> A cumulative indicator that measures buying and selling pressure by adding volume on up days and subtracting it on down days.</p>
+<p><b>Calculation:</b></p>
+<ul>
+<li>If Close &gt; Previous Close → OBV = Previous OBV + Volume</li>
+<li>If Close &lt; Previous Close → OBV = Previous OBV − Volume</li>
+<li>If Close = Previous Close → OBV = Previous OBV (unchanged)</li>
+</ul>
+<p><b>Swing trading logic:</b></p>
+<ul>
+<li>Rising OBV while price is flat → accumulation → potential breakout.</li>
+<li>Falling OBV while price is flat → distribution → potential breakdown.</li>
+<li>Divergence (price up, OBV down) → weakening trend → caution signal.</li>
+<li>OBV confirming price trend → strong momentum → trend continuation likely.</li>
+</ul>
 
 <h2>Bollinger Bands</h2>
 <p><b>Definition:</b> 20-day SMA (middle) ± 2 standard deviations (upper & lower bands).</p>
@@ -81,11 +97,11 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <li>MA20 &gt; MA50 → +1</li>
 <li>ADX &gt; 20 → +1</li>
 <li>Price &lt; Lower Bollinger Band → +1</li>
+<li>OBV rising with price → +1</li>
 <li>PE &lt; 20 → +1</li>
 <li>Revenue Growth &gt; 5% → +1</li>
 <li>Beta &lt; 1.5 → +1</li>
 <li>Price &lt; 52-week High by &gt;10% → +1</li>
-<li>Volatility % &lt; 5% → +1</li>
 </ul>
 <p>Score interpretation:</p>
 <ul>
@@ -104,10 +120,10 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <li>MA20 &lt; MA50 → +1</li>
 <li>ADX &gt; 20 and −DI &gt; +DI → +1</li>
 <li>Price &gt; Upper Bollinger Band → +1</li>
+<li>OBV falling while price is flat/rising → +1</li>
 <li>PE high or negative fundamentals → +1</li>
 <li>Revenue Growth negative → +1</li>
 <li>Beta &gt; 1.5 → +1</li>
-<li>Price &gt; 52-week Low by &lt;10% → +1</li>
 <li>High Volatility % (&gt; 5%) → +1</li>
 </ul>
 <p>Interpretation: Higher sell score → stronger bearish signal, potential market reversal.</p>
