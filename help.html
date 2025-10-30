@@ -20,7 +20,7 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <li>Calculation / Method</li>
 <li>Interpretation for swing trading</li>
 </ul>
-<p><i>Generated on: 2025-10-21 22:21:33</i></p>
+<p><i>Generated on: 2025-10-29 21:39:52</i></p>
 
 <h2>RSI (Relative Strength Index)</h2>
 <p><b>Definition:</b> Measures speed and magnitude of price movements to identify overbought/oversold conditions (0–100).</p>
@@ -72,6 +72,31 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <p><b>Buy Signal:</b> +DI crosses above −DI with ADX &gt; 20 → strong bullish trend.</p>
 <p><b>Sell Signal:</b> −DI crosses above +DI with ADX &gt; 20 → strong bearish trend.</p>
 
+<h2>Slow Stochastic Oscillator (%K and %D)</h2>
+<p><b>Definition:</b> The Slow Stochastic is a momentum oscillator that compares a stock’s closing price to its recent trading range to identify potential trend reversals. It smooths the original (fast) stochastic values to reduce noise.</p>
+<p><b>Calculation:</b></p>
+<ul>
+<li><code>%K = 100 × (Close − LowestLow) / (HighestHigh − LowestLow)</code> over a 14-period window.</li>
+<li><code>%D = 3-period moving average of %K</code> (signal line).</li>
+<li>Typical parameters: 14-period %K, 3-period smoothing for %D.</li>
+</ul>
+<p><b>Interpretation:</b></p>
+<ul>
+<li>Values range from 0 to 100.</li>
+<li><b>Overbought:</b> %K &gt; 80 → possible pullback or correction.</li>
+<li><b>Oversold:</b> %K &lt; 20 → possible rebound or rally.</li>
+<li><b>Buy Signal:</b> %K crosses above %D in the oversold zone (below 20) → momentum shift to bullish.</li>
+<li><b>Sell Signal:</b> %K crosses below %D in the overbought zone (above 80) → momentum shift to bearish.</li>
+<li><b>Divergences:</b> When price makes new highs/lows but stochastic doesn’t, it can foreshadow trend reversals.</li>
+</ul>
+<p><b>Swing trading logic:</b></p>
+<ul>
+<li>Use Slow Stochastic to confirm RSI or MACD setups.</li>
+<li>A %K/%D bullish crossover below 20 adds +1 to the Swing Score.</li>
+<li>A %K/%D bearish crossover above 80 adds +1 to the Sell Score.</li>
+<li>Helps detect short-term turning points before other indicators confirm.</li>
+</ul>
+
 <h2>ATR (Average True Range & Volatility)</h2>
 <p><b>Definition:</b> Measures volatility via True Range: TR = max(High−Low, |High−PrevClose|, |Low−PrevClose|).</p>
 <p><b>Logic:</b> ATR% indicates price movement volatility. Not directional but helps assess risk.</p>
@@ -98,10 +123,10 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <li>ADX &gt; 20 → +1</li>
 <li>Price &lt; Lower Bollinger Band → +1</li>
 <li>OBV rising with price → +1</li>
+<li>Slow Stochastic %K/%D crossover below 20 → +1</li>
 <li>PE &lt; 20 → +1</li>
 <li>Revenue Growth &gt; 5% → +1</li>
 <li>Beta &lt; 1.5 → +1</li>
-<li>Price &lt; 52-week High by &gt;10% → +1</li>
 </ul>
 <p>Score interpretation:</p>
 <ul>
@@ -121,21 +146,22 @@ code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 3px; }
 <li>ADX &gt; 20 and −DI &gt; +DI → +1</li>
 <li>Price &gt; Upper Bollinger Band → +1</li>
 <li>OBV falling while price is flat/rising → +1</li>
+<li>Slow Stochastic %K/%D crossover above 80 → +1</li>
 <li>PE high or negative fundamentals → +1</li>
 <li>Revenue Growth negative → +1</li>
-<li>Beta &gt; 1.5 → +1</li>
-<li>High Volatility % (&gt; 5%) → +1</li>
+<li>Beta &gt; 1.5 or High Volatility → +1</li>
 </ul>
 <p>Interpretation: Higher sell score → stronger bearish signal, potential market reversal.</p>
+
 <h2>Command prompt ChatGPT</h2>
-<p>Effectue une analyse fondamentale et technique compl&egrave;te du titre en utilisant les donn&eacute;es les plus r&eacutecentes et les informations fournies ci-dessous.
+<p>Effectue une analyse fondamentale et technique compl&egrave;te du titre en utilisant les donn&eacute;es les plus r&eacute;centes et les informations fournies ci-dessous.
 <br>Formule une recommandation d'achat ou de non-achat pour les horizons suivants:</p>
 <ul>
 <li>Court terme (1 &agrave; 3 mois)</li>
 <li>Moyen terme (3 &agrave; 6 mois)</li>
 <li>Long terme (6 mois et plus)</li>
 </ul>
-Indique &eacutegalement les prix d'entr&eacutees et de sorties recommand&eacutes pour chaque horizon.
+Indique &eacute;galement les prix d'entr&eacute;es et de sorties recommand&eacute;s pour chaque horizon.
 <ul>
 <li>Titre:</li>
 <li>Prix:</li>
@@ -159,6 +185,7 @@ Indique &eacutegalement les prix d'entr&eacutees et de sorties recommand&eacutes
 <li>RSI(14):</li>
 <li>MACD(12,26,9):</li>
 <li>ADX(14,14,y,n):</li>
+<li>Stochastic(14,3,3):</li>
 </ul>
 
 </body>
