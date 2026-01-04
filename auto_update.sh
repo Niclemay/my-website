@@ -17,6 +17,13 @@ echo "=== auto_update start: $DATE ===" >> "$LOG"
   exit 1
 }
 
+# 1.1) Run the Python script with the specific interpreter in your venv
+/home/nicolas/myenv/bin/python3 /home/nicolas/Desktop/daily_technical_report.py>> "$LOG" 2>&1 || {
+  echo "Python script failed at $(date)" >> "$LOG"
+  exit 1
+}
+
+
 
 # 2) Run deploy script to push changes to GitHub
 /home/nicolas/Desktop/my-website/deploy.sh >> "$LOG" 2>&1 || {
